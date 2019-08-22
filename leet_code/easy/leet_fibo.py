@@ -32,4 +32,24 @@ class Solution(object):
         return fibo[-1]
 
 
+        # memoization recursive solution   
+
+        if N == 0:
+          return N
+
+        memo = {}
+    
+        def fibo(val):
+            if val in memo:
+                return memo[val]
+            if val == 1 or val == 2:
+                result = 1
+            else:
+                result = fibo(val-1) + fibo(val-2)
+                
+            memo[val] = result
+            return result
+        return fibo(N)
+
+
 #https://leetcode.com/problems/fibonacci-number/
