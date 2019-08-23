@@ -24,7 +24,5 @@ class Solution(object):
                         
                         return A == B
                 
-        return True
-
 
 #https://leetcode.com/problems/buddy-strings/
