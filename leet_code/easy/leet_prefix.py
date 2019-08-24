@@ -52,5 +52,4 @@ class Solution(object):
         # return ''
         
 
-
 #https://leetcode.com/problems/longest-common-prefix/
